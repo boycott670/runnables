@@ -2,10 +2,10 @@ package runnables;
 
 import java.util.logging.Logger;
 
-@Times(10)
+@Times(256)
 public final class DummyIndexedRunnable implements IndexedRunnable
 {
-    final static Logger logger = Logger.getLogger(DummyIndexedRunnable.class.getSimpleName());
+    private static final Logger logger = Logger.getLogger(DummyIndexedRunnable.class.getSimpleName());
 
     public void run(final int index) throws Throwable
     {
